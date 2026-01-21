@@ -5,9 +5,11 @@
 </head>
 
 <body>
-    <script>
+<script>
+window.addEventListener('load', () => {
   const uri = new URLSearchParams(window.location.search).get('URi');
   if (uri) fetch(uri, { method: 'POST' });
-  </script>
+});
+</script>
 </body>
 </html>
